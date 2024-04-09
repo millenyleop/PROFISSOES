@@ -1,1 +1,23 @@
+SELECT MAX(idade) AS idade_maxima
+FROM alunos
+WHERE sexo = 'Masculino' AND nome LIKE '%c%' AND nome NOT LIKE 'MILLENY LEOPOLDINO%';
 
+SELECT MIN(idade) AS idade_minima
+FROM alunos
+WHERE (sexo = 'Feminino' OR sexo = 'Masculino') AND nome LIKE '%f%' AND nome NOT LIKE 'Milleny leopoldino%';
+
+SELECT MAX(idade) AS idade_maxima
+FROM alunos
+WHERE sexo = 'Feminino' AND nome LIKE 'g%' AND nome NOT LIKE 'Milleny leopoldino%';
+
+SELECT MIN(idade) AS idade_minima
+FROM alunos
+WHERE sexo = 'Masculino' AND nome LIKE 'r%' AND nome NOT LIKE 'Milleny leopoldino%';
+
+SELECT MAX(idade) + MIN(idade) AS soma_idades
+FROM alunos
+WHERE nome NOT LIKE 'Milleny leopoldino';
+
+SELECT *
+FROM alunos
+WHERE sexo = 'Feminino' AND nome LIKE '%a%' AND nome NOT LIKE 'Milleny leopoldino%';
