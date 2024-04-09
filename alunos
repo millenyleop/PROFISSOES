@@ -16,5 +16,3 @@ SELECT SUM(idade) AS SomaIdades FROM alunos;
 SELECT SUM(idade) AS SomaIdades FROM alunos WHERE sexo = 'Feminino';
 
 SELECT SUM(idade) AS SomaIdades FROM alunos WHERE sexo = 'Masculino';
-
-
