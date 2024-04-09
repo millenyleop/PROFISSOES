@@ -1,0 +1,20 @@
+UPDATE alunos
+SET Sexo = 'Feminino';
+
+UPDATE alunos
+SET Sexo = 'Masculino'
+WHERE id IN (3, 8, 10, 14, 16, 21, 25, 26, 29, 30, 31, 32, 33, 34);
+
+SELECT AVG(idade) AS MediaIdades FROM alunos;
+
+SELECT AVG(idade) AS MediaIdadeFeminino FROM alunos WHERE sexo = 'Feminino';
+
+SELECT AVG(idade) AS MediaIdadeFeminino FROM alunos WHERE sexo = 'Masculino'; 
+
+SELECT SUM(idade) AS SomaIdades FROM alunos; 
+
+SELECT SUM(idade) AS SomaIdades FROM alunos WHERE sexo = 'Feminino';
+
+SELECT SUM(idade) AS SomaIdades FROM alunos WHERE sexo = 'Masculino';
+
+
