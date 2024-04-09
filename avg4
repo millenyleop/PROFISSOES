@@ -1,0 +1,11 @@
+SELECT AVG(idade) AS MediaIdadeMasculinoB FROM alunos WHERE sexo = 'Masculino' AND nome LIKE '%b%';
+SELECT SUM(idade) AS SomaIdadesComS FROM alunos WHERE nome LIKE '%s%';
+SELECT AVG(idade) AS MediaIdadeFemininoI FROM alunos WHERE sexo = 'Feminino' AND nome LIKE 'i%';
+SELECT AVG(idade) AS MediaIdadeMasculinoG FROM alunos WHERE sexo = 'Masculino' AND nome LIKE 'G%';
+SELECT SUM(idade) AS soma_idades
+FROM alunos
+WHERE sexo = 'feminino' AND nome LIKE '%a%';
+SELECT SUM(idade) AS soma_idades
+FROM alunos
+WHERE sexo = 'masculino' AND nome LIKE '%f%';
+
